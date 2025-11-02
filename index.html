@@ -3,194 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark only">
-    <meta name="description" content="Josee's personal bio and social links">
-    <meta name="keywords" content="Josee, bio, links, social, profile, personal">
-    <meta name="author" content="Josee">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://josee.moe/">
-    <meta property="og:title" content="Josee">
-    <meta property="og:description" content="I'm only wearing band-aids today! Connect with me across all platforms.">
-    <meta property="og:image" content="https://josee.moe/assets/images/profile.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://josee.moe/">
-    <meta property="twitter:title" content="Josee - Personal Bio & Links">
-    <meta property="twitter:description" content="I'm only wearing band-aids today! Connect with me across all platforms.">
-    <meta property="twitter:image" content="https://josee.moe/assets/images/profile.png">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favico.ico">
-    <link rel="shortcut icon" href="favico.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="favico.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favico.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favico.ico">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#ff6b9d">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Josee">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="browserconfig.xml">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    
-    <!-- Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZV0M8GNBX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4ZV0M8GNBX', {
-            'send_page_view': false,
-            'anonymize_ip': true
-        });
-        gtag('event', 'page_view', {
-            'page_title': 'josee_bio_page'
-        });
-    </script>
-
-    <title>Josee - Personal Bio & Links</title>
+    <title>@Josee - Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <div class="background">
+        <canvas id="particles-canvas"></canvas>
+        <div class="background-pattern"></div>
+    </div>
+    
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image-wrapper">
+                <div class="profile-glow"></div>
+                <img src="https://via.placeholder.com/150" alt="Josee" class="profile-image" id="profileImage">
+            </div>
+            <h1 class="profile-name">@Josee</h1>
+            <p class="profile-bio">I'm only wearing band-aids today! 🩹</p>
+        </div>
 
-    <!-- Background -->
-    <div class="background" aria-hidden="true">
-        <div class="background-overlay"></div>
+        <div class="links-section">
+            <div class="link-card" data-link="spotify">
+                <div class="link-icon"><i class="fab fa-spotify"></i></div>
+                <div class="link-content">
+                    <span class="link-title">Spotify</span>
+                    <span class="link-subtitle">Music & Playlists</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+
+            <div class="link-card" data-link="anilist">
+                <div class="link-icon"><i class="fas fa-heart"></i></div>
+                <div class="link-content">
+                    <span class="link-title">AniList</span>
+                    <span class="link-subtitle">Anime Tracking</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+
+            <div class="link-card" data-link="discord">
+                <div class="link-icon"><i class="fab fa-discord"></i></div>
+                <div class="link-content">
+                    <span class="link-title">Discord</span>
+                    <span class="link-subtitle">Let's Chat!</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+
+            <div class="link-card" data-link="steam">
+                <div class="link-icon"><i class="fab fa-steam"></i></div>
+                <div class="link-content">
+                    <span class="link-title">Steam</span>
+                    <span class="link-subtitle">Gaming Profile</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+
+            <div class="link-card" data-link="github">
+                <div class="link-icon"><i class="fab fa-github"></i></div>
+                <div class="link-content">
+                    <span class="link-title">GitHub</span>
+                    <span class="link-subtitle">Code & Projects</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+
+            <div class="link-card" data-link="lastfm">
+                <div class="link-icon"><i class="fab fa-lastfm"></i></div>
+                <div class="link-content">
+                    <span class="link-title">Last.fm</span>
+                    <span class="link-subtitle">Music Stats</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="link-glow"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with <span class="heart">💖</span> by Narii</p>
+        </footer>
     </div>
 
-    <!-- Main content -->
-    <main id="main" class="main" role="main">
-        <div class="container">
-            <!-- Profile section -->
-            <section class="profile" aria-labelledby="profile-heading">
-                <div class="profile-image" data-animate="fade-up" data-delay="0">
-                    <div class="image-wrapper">
-                        <img 
-                            src="assets/images/profile.png" 
-                            alt="Animated profile picture of Josee" 
-                            width="200" 
-                            height="200"
-                            loading="eager"
-                        >
-                    </div>
-                </div>
-                
-                <h1 id="profile-heading" class="profile-name" data-animate="fade-up" data-delay="200">
-                    <span class="name">@Josee</span>
-                </h1>
-                
-                <p class="profile-bio" data-animate="fade-up" data-delay="400">
-                    I'm only wearing band-aids today! 🩹
-                </p>
-            </section>
-
-            <!-- Social links section -->
-            <section class="social-links" aria-labelledby="links-heading">
-                <h2 id="links-heading" class="sr-only">Social Media Links</h2>
-                
-                <nav class="links-grid" role="navigation" aria-label="Social media and platform links" data-animate="stagger" data-delay="600">
-                    <a href="https://open.spotify.com/user/n1wm3jcv16wmi4mkodgv8aqfm?si=28600123218449ad" 
-                       class="social-link spotify" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Visit Josee's Spotify profile">
-                        <div class="link-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-                            </svg>
-                        </div>
-                        <span class="link-text">Spotify</span>
-                    </a>
-
-                    <a href="https://anilist.co/user/L0veNote/" 
-                       class="social-link anilist" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Visit Josee's AniList profile">
-                        <div class="link-icon">
-                            <img src="assets/images/anilist.svg" alt="" width="24" height="24">
-                        </div>
-                        <span class="link-text">AniList</span>
-                    </a>
-
-                    <a href="https://discord.com/users/1063170259764396103" 
-                       class="social-link discord" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Connect with Josee on Discord">
-                        <div class="link-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                            </svg>
-                        </div>
-                        <span class="link-text">Discord</span>
-                    </a>
-
-                    <a href="https://steamcommunity.com/id/LoveNote0/" 
-                       class="social-link steam" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Visit Josee's Steam profile">
-                        <div class="link-icon">
-                            <img src="assets/images/steam.svg" alt="" width="24" height="24">
-                        </div>
-                        <span class="link-text">Steam</span>
-                    </a>
-
-
-                    <a href="https://github.com/L0veNote" 
-                       class="social-link github" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Visit Josee's GitHub profile">
-                        <div class="link-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                            </svg>
-                        </div>
-                        <span class="link-text">GitHub</span>
-                    </a>
-
-                    <a href="https://www.last.fm/user/Yurikae" 
-                       class="social-link lastfm" 
-                       data-animate="fade-up" 
-                       data-delay="0"
-                       aria-label="Visit Josee's Last.fm profile">
-                        <div class="link-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm5.568 17.376c-.72 0-1.44-.48-1.92-1.44l-2.64-5.76c-.48-.96-1.2-1.44-1.92-1.44-.72 0-1.44.48-1.92 1.44l-.96 2.16c-.24.48-.48.72-.96.72-.48 0-.72-.24-.72-.72 0-.24.24-.72.48-1.2l1.2-2.64c.72-1.68 1.92-2.64 3.36-2.64s2.64.96 3.36 2.64l2.64 5.76c.24.48.48.96.48 1.2 0 .48-.24.72-.72.72-.24 0-.48-.24-.72-.72l-.48-1.2z"/>
-                            </svg>
-                        </div>
-                        <span class="link-text">Last.fm</span>
-                    </a>
-                </nav>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <p class="footer-text">
-            Made with <span class="heart" aria-label="love">💖</span> by 
-            <a href="https://github.com/L0veNote" class="footer-link">Narii</a>
-        </p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
