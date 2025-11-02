@@ -1,26 +1,85 @@
-# 🎀 Josee.moe: My Little Corner of the Web
+<div align="center">
 
-> ✨ A **whimsical and super-sleek** personal bio template!
+# 🎀 Josee.moe
 
-[![Live Demo](https://img.shields.io/badge/Peek%20Inside!-ff92b4?style=for-the-badge&logo=github)](l0venote.github.io/Josee.moe/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-fdbcdb.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+> ✨ A **gorgeous and ultra-modern** personal links page with stunning animations and interactive effects
 
+![Status](https://img.shields.io/badge/status-live-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## 🌟 Features
+**[🌟 Live Demo](https://l0venote.github.io/Josee.moe/)**
 
-- **Pocket-Sized & Perfect** - Works like a charm on tiny phones all the way up to big monitors! (Responsive Design)
-- **Feather-Light Animations** - Delightful little **hover effects and transitions** that feel smooth and gentle, never jarring.
-- **Modern & Sweet UI** - A clean, **minimalist aesthetic** kissed with beautiful gradient colors.
-- **Super Speedy!** - Loads almost instantly, so your visitors don't have to wait a single second to see your amazing page! (Optimized Performance)
-- **Super-Duper Accessible** - Built with accessibility in mind, making sure everyone can enjoy your lovely site.
+---
 
-## 🎨 Tech Stack
+</div>
 
-The simple, powerful tools that make the magic happen!
+## ✨ Features
 
-| Ingredient | Description |
-| :---: | :--- |
-|🏰 **HTML5** | The solid foundation and **semantic structure** of your digital castle. |
-|✨ **CSS3** | All the fun stuff! We use **Custom Properties** (CSS Variables) to make theming a cinch. |
-|🐇 **Vanilla JS** | Lightweight, **zero-dependency** scripting for quick little interactions. |
-|💌 **PWA Ready** | Can be installed like a little app and even works offline! How neat is that? |
+- 🎨 **Modern Dark Design** - Beautiful glassmorphic cards with gradient backgrounds
+- ⚡ **Interactive Particles** - 80+ particles that react to your mouse with trail effects
+- 🎯 **Smooth Animations** - Hover effects, parallax, click ripples, and more
+- 📱 **Fully Responsive** - Perfect on all devices
+- 🚀 **Zero Dependencies** - Pure HTML/CSS/JS, no build process needed
+- 💫 **GitHub Auto-Fetch** - Automatically pulls your profile picture from GitHub
+
+## 🚀 Quick Start
+
+1. Clone or download this repository
+2. Update your links in `script.js` (update the `config.links` object)
+3. Customize your profile info in `index.html`
+4. Deploy to GitHub Pages, Netlify, or your favorite host!
+
+**That's it!** Just open `index.html` in a browser. No npm, no build process needed! 🎉
+
+## 🎨 Customization
+
+### Update Links & Profile
+Edit the `config` object in `script.js`:
+```javascript
+const config = {
+    githubUsername: 'YourUsername',
+    profileName: '@YourName',
+    profileBio: "Your bio here! 🎀",
+    links: {
+        spotify: 'your-spotify-url',
+        // ... etc
+    }
+};
+```
+
+### Change Colors
+Modify CSS variables in `styles.css`:
+```css
+:root {
+    --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    /* Customize colors here! */
+}
+```
+
+## 📄 License & Attribution
+
+This project is licensed under **MIT License**, but **attribution is mandatory** if you use this page.
+
+### ✅ You MUST:
+- Credit **Narii / L0veNote** in a visible location on your page
+- Keep the attribution visible and accessible
+- Include copyright notices in distributed code
+
+### ❌ You CANNOT:
+- Remove or hide the attribution credit
+- Claim this as your original work
+
+**Example Attribution:**
+```html
+<p>Design by <a href="https://github.com/L0veNote/Josee.moe">Narii</a></p>
+```
+
+## 💖 Credits
+
+<div align="center">
+
+**Created with 💖 by [Narii](https://github.com/L0veNote)**
+
+**If you find this helpful, please consider ⭐ starring it!**
+
+</div>
